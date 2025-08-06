@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  postgresdb:
+    image: postgres:15
+    container_name: postgredb
+    environment:
+      POSTGRES_DB: springbot
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: user123
+    ports:
+      - "5433:5432"
